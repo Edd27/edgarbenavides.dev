@@ -13,7 +13,7 @@ tags:
   - Frontend
 ---
 
-**Todo App Description:**
+**Cocktails App Description:**
 
 _Discover and explore a world of delightful cocktail recipes with our user-friendly Cocktails Recipes Searcher App. Unleash your inner mixologist and impress your guests with unique concoctions. Elevate your drinking experience now!_
 
