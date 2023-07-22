@@ -17,11 +17,16 @@ const iconLinks: {
   icon: keyof typeof iconPaths
 }[] = [
   {
+    label: 'LinkedIn',
+    href: 'https://linkedin.com/in/edgarbenavides/',
+    icon: 'linkedin-logo'
+  },
+  { label: 'GitHub', href: 'https://github.com/Edd27', icon: 'github-logo' },
+  {
     label: 'Twitter',
     href: 'https://twitter.com/EddDevJs',
     icon: 'twitter-logo'
-  },
-  { label: 'GitHub', href: 'https://github.com/Edd27', icon: 'github-logo' }
+  }
 ]
 ---
 
@@ -69,10 +74,19 @@ const iconLinks: {
       }
     </ul>
     <div class="menu-footer">
-      <div class="socials">
+      <a
+        href="/Edgar_Benavides_Software_Engineer.pdf"
+        download
+        class="social flex items-center gap-1 px-3 md:px-2 rounded-[999rem] bg-white hover:bg-[var(--accent-regular)] transition dark:bg-[var(--accent-regular)] dark:text-white dark:hover:bg-white dark:hover:text-[var(--accent-regular)]"
+      >
+        <Icon icon="file-arrow-down" size="1.2rem" />
+        <span class="text-[1.1rem] hidden md:block">Resume</span>
+      </a>
+
+      <div class="socials items-center">
         {
           iconLinks.map(({ href, icon, label }) => (
-            <a href={href} class="social" target="_blank">
+            <a href={href} class="social items-center" target="_blank">
               <span class="sr-only">{label}</span>
               <Icon icon={icon} />
             </a>
